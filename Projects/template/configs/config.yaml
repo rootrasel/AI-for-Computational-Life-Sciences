@@ -1,0 +1,16 @@
+project_name: "BioML-Research-Project"
+seed: 42
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  train_split: 0.80
+  val_split: 0.10
+  test_split: 0.10
+  split_strategy: "homology_cluster" # options: homology_cluster, scaffold, random
+hardware:
+  device: "cuda"
+  num_workers: 4
+  mixed_precision: true
+logging:
+  wandb_project: "life-sciences-ai"
+  log_interval: 10

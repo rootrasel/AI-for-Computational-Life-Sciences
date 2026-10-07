@@ -1,0 +1,59 @@
+name: bio-ai-env
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Deep Learning Core
+  - pytorch>=2.1.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - pyg
+  - pytorch-lightning>=2.1.0
+  # Scientific Python & Statistics
+  - numpy>=1.24.0
+  - scipy>=1.11.0
+  - pandas>=2.1.0
+  - scikit-learn>=1.3.0
+  - statsmodels>=0.14.0
+  - networkx>=3.1
+  - sympy
+  # Visualization
+  - matplotlib>=3.8.0
+  - seaborn>=0.13.0
+  # Bioinformatics & Genomics
+  - biopython>=1.81
+  - pysam>=0.22.0
+  - pyvcf3
+  - bedtools
+  - samtools
+  # Single-Cell Omics
+  - scanpy>=1.9.5
+  - anndata>=0.10.0
+  - scrublet
+  # Cheminformatics & CADD
+  - rdkit>=2023.09.1
+  - openbabel
+  # Workflow & Testing
+  - snakemake>=7.32.0
+  - pytest>=7.4.0
+  - black>=23.9.0
+  - ruff>=0.1.0
+  - pip:
+    - fair-esm
+    - transformers>=4.35.0
+    - datasets>=2.14.0
+    - accelerate>=0.24.0
+    - datamol>=0.11.0
+    - molfeat>=0.9.0
+    - biopandas>=0.4.1
+    - prody>=2.4.1
+    - PyTDC>=0.4.5
+    - lifelines>=0.27.8
+    - mapie>=0.7.0
+    - wandb

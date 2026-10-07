@@ -1,0 +1,4 @@
+# Ignore all raw data files in git
+*
+!.gitignore
+!.gitkeep
