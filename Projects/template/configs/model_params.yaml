@@ -1,0 +1,14 @@
+model:
+  architecture: "EquivariantGNN"
+  hidden_dim: 128
+  num_layers: 4
+  dropout: 0.1
+  readout: "mean"
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.0005
+  weight_decay: 0.00001
+  patience: 15
+optimizer: "AdamW"
+scheduler: "CosineAnnealingLR"
