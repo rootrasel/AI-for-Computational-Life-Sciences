@@ -22,7 +22,6 @@ wheels/
 *.egg
 
 # Virtual environments & Conda
-.env
 .venv
 env/
 venv/
@@ -89,3 +88,5 @@ lightning_logs/
 *.swo
 .DS_Store
 Thumbs.db
+config.bat
+node_modules
